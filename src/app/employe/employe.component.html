@@ -1,0 +1,29 @@
+<!-- <p>employe works!</p> -->
+ <div class="container">
+    <table class="table table-striped" *ngIf="EmployeeList">
+        <thead>
+          <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Email </th>
+            <th>AddressLine</th>
+            <th>City</th>
+            <!-- <th>EmployeeID</th> -->
+            <th>Department</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let dataItem of EmployeeList">
+            <td>{{dataItem.firstName}}</td>
+            <td>{{ dataItem.lastName}}</td>
+            <td>{{dataItem.email}}</td>
+            <td>{{dataItem.addressLine}}</td>
+            <td>{{dataItem.city}}</td>
+            <!-- <td>{{dataItem.employeeID}}</td> -->
+            <td>{{dataItem.department_id}}</td>
+          </tr>
+        </tbody>
+    </table>
+     <!-- <p *ngif!="EmployeeList">No data found</p>  -->
+</div>
+    

@@ -1,0 +1,31 @@
+<div class="conatiner my-5">
+    <h1 class="mb-3">Add Employe</h1>
+    <form #form="ngForm" (ngSubmit)="addemployee()">
+        <div class="mb-3">
+            <label for="fname" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="fname" name="firstName" [(ngModel)]="addemployeRequest.firstName" >
+          </div>
+          <div class="mb-3">
+            <label for="lname" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lname" name="lastName" [(ngModel)]="addemployeRequest.lastName">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" [(ngModel)]="addemployeRequest.email">
+          </div>
+          <div class="mb-3">
+            <label for="address" class="form-label">AddressLine</label>
+            <input type="text" class="form-control" id="address" name="addressLine" [(ngModel)]="addemployeRequest.addressLine">
+          </div>
+          <div class="mb-3">
+            <label for="city" class="form-label">City</label>
+            <input type="text" class="form-control" id="city" name="city" [(ngModel)]="addemployeRequest.city">
+          </div>
+          <div class="mb-3">
+            <label for="Dept" class="form-label">Department</label>
+            <input type="number" class="form-control" id="Dept" name="Department" [(ngModel)]="addemployeRequest.department_id">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+</div>
